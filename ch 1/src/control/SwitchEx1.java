@@ -24,19 +24,24 @@ public class SwitchEx1 {
         // System.out.println("월을 확인해 주세요.");
         // }
 
+        // 조건식을 계산한다
+        // 조건식의 결과는 정수, 문자열만 가능
         switch (month) {
             case 3:
             case 4:
             case 5:
                 System.out.println("현재 계절은 봄입니다.");
+                break;
             case 6:
             case 7:
             case 8:
                 System.out.println("현재 계절은 여름입니다.");
+                break;
             case 9:
             case 10:
             case 11:
                 System.out.println("현재 계절은 가을입니다.");
+                break;
             case 12:
             case 1:
             case 2:

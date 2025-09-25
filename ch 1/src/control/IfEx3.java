@@ -39,6 +39,7 @@ public class IfEx3 {
             }
         } else {
             grade = 'C';
+            opt = ' ';
         }
         System.out.println("학점 : " + grade + opt);
     }

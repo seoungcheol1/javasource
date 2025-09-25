@@ -13,7 +13,7 @@ public class OperatorEx4 {
         // i는 2의 배수 또는 3의 배수지만 6의 배수는 아니다
         // or와 and가 같이 쓰이면 and의 우선순위가 더 높다
         int i = 6;
-        System.out.println((i % 2 == 0 || i % 3 == 0) && i % 6 != 0);
+        System.out.println((i % 2 == 0 || i % 3 == 0) && i % 6 = 0);
 
         // 문자 ch는 대문자 또는 소문자이다
         // 'a' <= ch && ch <= 'z' || 'A' <= ch && ch <= 'Z'
