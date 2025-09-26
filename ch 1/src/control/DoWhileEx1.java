@@ -11,6 +11,7 @@ public class DoWhileEx1 {
         Scanner sc = new Scanner(System.in);
         int answer = (int) (Math.random() * 100) + 1;
         int num = 0;
+
         do {
             System.out.print("1 ~ 100 사이의 정수를 입력하세요.:");
             num = Integer.parseInt(sc.nextLine());

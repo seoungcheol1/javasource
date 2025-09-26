@@ -21,17 +21,17 @@ public class ForEx1 {
         // }
 
         // 1~10까지 출력
-        // for (int i = 1; i < 11; i++) {
-        // System.out.print(i + " ");
-        // }
+        for (int i = 1; i < 11; i++) {
+            System.out.print(i + " ");
+        }
 
         // 1 에서 10 까지 합계 구하기
-        int sum = 0;
-        for (int i = 1; i <= 10; i++) {
-            // sum = sum + i;
-            sum += i;
-        }
-        System.out.println("1 에서 10 까지의 합 : " + sum);
+        // int sum = 0;
+        // for (int i = 1; i <= 10; i++) {
+        // // sum = sum + i;
+        // sum += i;
+        // }
+        // System.out.println("1 에서 10 까지의 합 : " + sum);
 
     }
 }
