@@ -12,7 +12,7 @@ public class ArrayEx8 {
                 { 4, 5, 6 }
         };
         System.out.println(score.length);// 3 행의 길이
-        System.out.println(score[0].length);// 4 열의 길이
+        System.out.println(score[0].length);// [n] n의 행의 원소 개수
         for (int i = 0; i < score.length; i++) {
             for (int j = 0; j < score[i].length; j++) {
                 System.out.print(score[i][j] + "\t"); // \t = tab
