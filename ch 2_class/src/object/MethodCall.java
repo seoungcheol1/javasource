@@ -1,0 +1,36 @@
+package object;
+
+public class MethodCall {
+    int iv = 10; // 인스턴스 생성 후 정보가 올라가기 때문에 static에 못 쓴다
+    static int cv = 20;
+    int iv2 = cv;
+
+    static void staticMethod1() {
+        MethodCall obj = new MethodCall();
+        System.out.println(obj.iv);
+        System.out.println(cv);
+    }
+
+    void instanceMethod1() {
+        // static 변수 호출 가능한지
+        System.out.println(cv);
+        // 인스턴스 변수 호출 가능한지
+        System.out.println(iv);
+    }
+
+    static void staticMethod2() {
+
+        // 클래스 메소드 호출 가능한지
+        staticMethod1();
+        // 인스턴스 메소드 호출 가능한지
+        MethodCall obj = new MethodCall();
+        obj.instanceMethod1();
+    }
+
+    void instanceMethod2() {
+        // 클래스 메소드 호출 가능한지
+        staticMethod1();
+        // 인스턴스 메소드 호출 가능한지
+        instanceMethod1();
+    }
+}

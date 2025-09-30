@@ -13,6 +13,8 @@ public class Car {
     // 리턴 값이 없다(void 쓰지 않음)
     // ()안에 아무것도 없으면 default(기본) 생성자 :
     // => 컴파일러가 자동으로 추가 : 단, 클래스에 정의된 생성자가 하나도 없는 경우
+    // 생성자 오버로딩 : 하나의 클래스에 여러개의 생성자 존재
+    // 메소드 오버로딩 : 하나의 클래스에 여러개의 메소드 존재
     Car() {
 
     }
@@ -26,6 +28,12 @@ public class Car {
         this.model = model;
     }
 
+    // public Car(String companyName, String color) { <= 오류가 난다 : 위에와 ()안에 타입 개수가
+    // 같아서
+    // this.companyName = companyName; 변수명이 중요한게 아니라 타입이 중요하다
+    // this.color = color;
+    // }
+
     public Car(String companyName, String model, String color) {
         this.companyName = companyName;
         this.model = model;
@@ -38,6 +46,13 @@ public class Car {
         this.color = color;
         this.maxSpeed = maxSpeed;
     }
+
+    // public Car(String companyName, String model, int maxSpeed, String color) {
+    // this.companyName = companyName;
+    // this.model = model; <= 오류가 안난다 : 위에와 타입이 같지만 순서가 달라서
+    // this.color = color;
+    // this.maxSpeed = maxSpeed;
+    // }
 
     void forward() {
         System.out.println(this.model + "전진한다");
