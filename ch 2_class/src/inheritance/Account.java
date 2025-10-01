@@ -1,4 +1,4 @@
-package object;
+package inheritance;
 
 public class Account {
     // 은행계좌
@@ -20,8 +20,11 @@ public class Account {
     }
 
     // 출금한다(잔액 = 잔액 - 출금액) => 인자로 받아서 처리 , 잔액 리턴 withdraw
-    long withdraw(long input) {
-
+    long withdraw(long input) throws Exception {
+        // 잔액 안에서 출금 허용
+        if (input > balance) {
+            throw new Exception("잔액 부족");
+        }
         balance -= input;
         return balance;
     }
@@ -37,6 +40,24 @@ public class Account {
 
     public String getOwner() {
         return owner;
+    }
+
+    // setter
+    public void setAccountNo(String accountNo) {
+        this.accountNo = accountNo;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public void setBalance(long balance) {
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Account [accountNo=" + accountNo + ", owner=" + owner + ", balance=" + balance + "]";
     }
 
 }
