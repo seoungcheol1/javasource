@@ -7,9 +7,21 @@ public class Account {
     private String owner;
     private long balance;
 
-    public Account(String accountNo, String owner, long balance) {
+    public Account(String accountNo) {
         this.accountNo = accountNo;
+    }
+
+    // this => 나 자신의 생성자 호출
+    public Account(String accountNo, String owner) {
+        // this.accountNo = accountNo;
+        this(accountNo);
         this.owner = owner;
+    }
+
+    public Account(String accountNo, String owner, long balance) {
+        // this.accountNo = accountNo;
+        // this.owner = owner;
+        this(accountNo, owner);
         this.balance = balance;
     }
 

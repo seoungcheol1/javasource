@@ -12,5 +12,8 @@ public class ChildEx {
         child.list(); // 자식 클래스
         System.out.println("child2 " + child2.age);
         child2.list(); // 부모 클래스
+
+        System.out.println("name " + child.name);
+        System.out.println("name " + child.name.length());
     }
 }
