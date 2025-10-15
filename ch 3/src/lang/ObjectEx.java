@@ -2,7 +2,7 @@ package lang;
 
 import java.util.Scanner;
 // java.lang 패키지는 자동 impor
-t
+
 public class ObjectEx {
     public static void main(String[] args) {
         // String str = new String();
