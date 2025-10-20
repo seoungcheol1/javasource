@@ -1,6 +1,5 @@
 package lang;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 // String => immutable(원본 변경불가)

@@ -30,7 +30,8 @@ public class ShopEx {
         // }
         // User users = new User(null, null);
 
-        MyShop myShop = new MyShop();
+        // MyShop myShop = new MyShop(); // 배열
+        MyShop2 myShop = new MyShop2(); // List
 
         // 이름지정
         myShop.setTitle("MyShop");
